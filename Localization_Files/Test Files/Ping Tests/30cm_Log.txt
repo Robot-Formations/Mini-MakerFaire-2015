@@ -1,0 +1,128 @@
+starting
+number: 1
+28.31
+number: 1
+26.34
+number: 1
+30.03
+number: 1
+28.21
+number: 1
+29.31
+number: 1
+29.38
+number: 1
+28.31
+number: 1
+26.17
+number: 1
+30.10
+number: 1
+28.59
+number: 1
+28.48
+number: 1
+30.76
+number: 1
+27.59
+number: 1
+30.03
+number: 1
+25.97
+number: 1
+29.76
+number: 1
+28.48
+number: 1
+27.66
+number: 1
+25.03
+number: 1
+33.28
+number: 1
+27.48
+number: 1
+29.17
+number: 1
+28.38
+number: 1
+29.76
+number: 1
+28.21
+number: 1
+30.48
+number: 1
+27.76
+number: 1
+27.28
+number: 1
+23.83
+number: 1
+28.86
+number: 1
+27.07
+number: 1
+32.55
+number: 1
+24.38
+number: 1
+28.48
+number: 1
+28.14
+number: 1
+30.31
+number: 1
+27.93
+number: 1
+32.66
+number: 1
+25.14
+number: 1
+28.72
+number: 1
+31.24
+number: 1
+25.41
+number: 1
+25.38
+number: 1
+27.86
+number: 1
+31.55
+number: 1
+27.66
+number: 1
+28.48
+number: 1
+28.52
+number: 1
+31.55
+number: 1
+30.55
+number: 1
+26.41
+number: 1
+28.48
+number: 1
+30.69
+number: 1
+29.17
+number: 1
+32.55
+number: 1
+29.17
+number: 1
+28.31
+number: 1
+29.48
+number: 1
+28.66
+number: 1
+27.45
+number: 1
+28.17
+number: 1
+27.48
+number: 1
+28.76
+number: 1
