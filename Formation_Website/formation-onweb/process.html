@@ -1,0 +1,181 @@
+﻿<html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script>
+		var Step = {Step1:"This is the Description for step 1 UNDER CONSTRUCTION(available by August 15)",Step2:"This is the Description for Step 2 UNDER CONSTRUCTION(available by August 15)",Step3:"This is the Description for step 3 UNDER CONSTRUCTION(available by August 15)",Step4:"This is the Description for step 4 UNDER CONSTRUCTION(available by August 15)",Step5:"This is the Description for Step 5 UNDER CONSTRUCTION(available by August 15)",Step6:"This is the Description for the Demo UNDER CONSTRUCTION(available by August 15)"}; 
+		var CurrentStep = "None";
+		$(document).ready(function (){
+			$(".stepTitle").click(function(e){								
+				var id = $(this).attr("id");
+				if (CurrentStep!="None")
+				$("#li" + CurrentStep).animate({'margin-top':'0',fontSize: '1em','height':'70px'});
+				if (CurrentStep!=id){
+				$("#li" + id).animate({'margin-top':'115px',fontSize: '2em','height':'200px'},800, function() {
+					$("#stepdesbkg").fadeOut(400, function() {
+						$("#StepPic").attr('src',"images/"+id+".jpg");
+						$("#StepDes").text(Step[id]);
+					})
+					.fadeIn(400);
+				});
+				CurrentStep = id;				
+				}
+				else{
+					CurrentStep="None";
+					$("#stepdesbkg").fadeOut(400);
+				}
+				
+			});
+		});			
+</script>
+<style>
+body{
+    margin:0;
+	background-color:#EDE2DC;
+}
+
+#navbar {
+  height: 70px;
+  background-color: #027D85;
+  box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.4);
+  width: auto;
+  text-align: center;
+}
+#navbar > ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+	text-align: center;
+	}
+
+#navbar li {
+    float: left;
+	position: relative;
+	width:18%;
+	height:70px;
+} 
+
+a:link, a:visited {
+    display: block;
+    color: #FFFFFF;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color:#027D85;
+    text-align: center;
+    padding: 26px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+	-webkit-transition: background-color .5s;
+	-moz-transition: background-color .5s;
+	-o-transition: background-color .5s;
+	transition: background-color .5s;
+}
+
+a:hover, a.active {
+    background-color: #074959;
+}
+
+#steps {
+  
+  height: 70px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.4);
+  width: 70%;
+  text-align: center;
+  border-radius: 25px;
+  margin-left:15%;
+  margin-top:3%;
+  }
+
+#steps > ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+	padding-left:3%;
+	padding-right:3%;
+    overflow: hidden;
+	text-align: center;
+	}
+
+#steps li {
+    float: left;
+	position: relative;
+	width:16%;
+	height: 70px;
+} 
+
+#steps > ul > li > .stepTitle  {
+	margin:0;
+    display: block;
+    color: black;
+	cursor:pointer;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color:#FFFFFF;
+    text-align: center;
+    padding: 26px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+	-webkit-transition: background-color .5s;
+	-moz-transition: background-color .5s;
+	-o-transition: background-color .5s;
+	transition: background-color .5s;
+}
+
+#steps .stepTitle:hover,#steps .stepTitle.active {
+    background-color: #dededd;
+}
+
+#stepdesbkg{
+width:70%;
+height:60%;
+background-color:#FFFFFF;
+margin: 0 auto;
+margin-top:2%;
+  border-radius: 10px;
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.4);
+	display:none;
+}
+
+#StepPic{
+float:left;
+width:40%;
+height:auto;
+padding-left:5%;
+padding-top:15%;
+}
+
+#stepDes{
+	float:right;
+	width:40%;
+	height:auto;
+	padding-right:5%;
+	padding-top:15%;
+}
+
+
+</style>
+<body>
+
+<div id= "navbar">
+<ul>
+  <li><a id = "home" href="index.html">Home</a></li>
+  <li><a id = "hardware" href="hardware.html">Hardware</a></li>
+  <li><a id = "Software" href="software.html">Software</a></li>
+  <li><a id = "process" href="process.html"  class="active">Project Process</a></li>
+</ul>
+</div>
+<div id = "steps">
+<ul id = "stepstable">
+  <li id = "liStep1"><p id = "Step1" class="stepTitle">Step 1</p></li>
+  <li id = "liStep2"><p id = "Step2" class="stepTitle">Step 2</p></li>
+  <li id = "liStep3"><p id = "Step3" class="stepTitle">Step 3</p></li>
+  <li id = "liStep4"><p id = "Step4" class="stepTitle">Step 4</p></li>
+  <li id = "liStep5"><p id = "Step5" class="stepTitle">Step 5</p></li>
+  <li id = "liStep6"><p id = "Step6" class="stepTitle">Demo</p></li>
+</ul>
+</div>
+
+<div id = "stepdesbkg" >
+<img id = "StepPic" src = "images/Step1.jpg" alt="Step Picture">
+<p id = "StepDes">Step Description<p> 
+</div>
+
+</html>

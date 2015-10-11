@@ -1,0 +1,218 @@
+<html>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#FindMore").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#ShortDescriptionsBkg").offset().top
+                    }, 1000);
+            });
+        });
+    </script>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+<head>
+<style>
+
+body{
+    margin:0;
+	background-image:url("images/bkgMultiColorCubism.png");
+}
+
+#navbar {
+  height: 70px;
+  background-color: #027D85;
+  box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.4);
+  width: auto;
+  text-align: center;
+}
+#navbar > ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+	text-align: center;
+	}
+
+#navbar li {
+    float: left;
+	position: relative;
+		width:18%;
+	height:70px;
+} 
+
+a:link, a:visited {
+    display: block;
+    color: #FFFFFF;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color:#027D85;
+    text-align: center;
+    padding: 26px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+	-webkit-transition: background-color .5s;
+	-moz-transition: background-color .5s;
+	-o-transition: background-color .5s;
+	transition: background-color .5s;
+}
+
+a:hover, a.active {
+    background-color: #074959;
+}
+
+h1{
+	color:#FFFFFF;
+	font-family: 'Roboto' , sans-serif;
+	font-size: 500%;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+	padding: 2% 6% 2%;
+	margin-bottom:0px;
+}
+
+#description {
+	color:#FFFFFF;
+	font-family: 'Roboto' , sans-serif;
+	font-weight: 300;
+	font-size: 150%;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+	float:right;
+	margin: 2% 2% 100px 40%;
+
+}
+
+#FindMore {
+	
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 0px;
+	cursor:pointer;
+}
+
+#MoreInfoBkg {
+  margin-top: -70px;
+  z-index: -1;
+  height: 20%;
+  background-color: #FFFFFF;
+  width: auto;
+}
+#ShortDescriptionsBkg {
+    box-shadow: 0px -3px 7px rgba(0, 0, 0, 0.4);
+	background-image:url("images/DescriptionHomeBkg.png");
+	height: 80%;
+	width: auto;
+	text-align: center;
+}
+#MoreInfoTitle{
+	text-align:center;
+	color:#FFFFFF;
+	font-family: 'Roboto' , sans-serif;
+	font-size: 300%;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+	padding-top:5%;
+}
+#DescriptionDiagram
+{
+	float:left;
+	margin-left: 10%;
+	margin-top: 5%;
+	width: 30%;
+	height:40%;
+}
+
+#LongDescription {
+	color:#FFFFFF;
+	font-family: 'Roboto' , sans-serif;
+	font-weight: 300;
+	font-size: 125%;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+	float:right;
+	height:auto;
+	margin-right:5%;
+	margin-top:5%;
+	width:50%;
+}
+
+#contactbkg {
+	background-color:#dededd;
+	height: 35%;
+	width: auto;
+}
+
+#OurContactInfo{
+	float:left;
+	margin-left:5%;
+	margin-top:5%;
+
+}
+
+#robotPicture
+{
+	width:20%;
+	height:auto;
+	padding-left:5%;
+	padding-top:5%;
+}
+</style>
+</head>
+<body>
+<div id= "navbar">
+<ul>
+  <li><a id = "home" href="index.html" class="active">Home</a></li>
+  <li><a id = "hardware" href="hardware.html">Hardware</a></li>
+  <li><a id = "Software" href="software.html">Software</a></li>
+  <li><a id = "process" href="process.html">Project Process</a></li>
+</ul>
+</div>
+
+<h1>Formation Control </h1> 
+<p id="description">
+
+Robots Formation is a multi-agent project in which a small group of robots will form
+ specific polygons defined by the user.  They have to generate the best suitable coordinates 
+ or vertices through localization techniques; thus, forming the dynamic user-defined size and 
+ pattern as fast as possible.
+
+</p> 
+
+<img src="images/NonClickMoreTag.png" alt="Find Out More" id = "FindMore" onmouseover="this.src='images/MoreTag.png';" onmouseout="this.src='images/NonClickMoreTag.png';">
+
+<div id = "MoreInfoBkg">
+</div>
+<div id = "ShortDescriptionsBkg">
+<div id="MoreInfoTitle">More Information </div> 
+<img id = "robotPicture" src="images/robotPic2.jpg" alt = "robot picture"/>
+<div id="LongDescription">
+Robots Formation is a multi-agent project in which a small group of robots will form specific polygons. 
+ Robots run in a 200x200cm arena. A user inputs the dimension of a regular polygon that they want the robots to form. 
+ The robots are placed at random points in the arena. The robots will work in unison to form the shape in the fastest possible
+  time based on their locations in the arena. The robots will use the walls and optical sensors to create a virtual coordinate
+   system for localization. Based on the robots’ individual coordinates, they will move to their calculated vertices until the polygon is created.   
+</div>
+</div>
+<div id = "contactbkg">
+<p id = "OurContactInfo">
+<table width="80%">
+<tr style="vertical-align:top">
+	<td style="width:10%"><img alt="Neeley T."  border="1" src="./images/neelay.JPG" width="100"></td>
+	<td width="40%" style="text-align:justify">
+	<p>Neelay Trivedi is a rising high schooler who started robotics 3 years 
+	ago. Since then, he has worked on projects like autonomous soccer-playing 
+	robots, an AI version of tic tac toe, and competing in Eindhoven for the 
+	international Robocup. Neelay's favorite subjects are math and physics, and 
+	in his free time, he likes to read, tinker around with electronics, and 
+	write in his science journal.&nbsp;<br><br></p>
+	</td>
+	<td width="10%" style="border-left:thin blue solid; padding-left:20px"><img alt="Prateek H."   border="1" src="./images/Prateek.png" >&nbsp;</td>
+	<td width="40%" style="text-align:justify">
+	Prateek Humane is a high school student who is passionate about robotics and programming. He started programming at the age of 10 and continues to 
+	challenge himself by learning various languages and participating in several robotic competitions and projects.  He has an affinity towards science
+	 and engineering and also enjoys playing soccer in his free time.  
+	
+	
+	</td>
+</tr>
+</table>
+
+</div>
+</body>
+</html>
